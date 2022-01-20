@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Battle of the hands</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="RPS.js" defer></script>
+    <style>
+        .navbar {
+            margin-bottom: 5px;
+            border-radius: 25px;
+        }
+        footer {
+            background-color: #c7c7c7;
+            padding: 7px;
+        }
+        .overview {
+            background-color: gray;
+        }
+        .hhand {
+            display: flex;
+            justify-content: center;
+        }
+        .main {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .grow {
+            transition: all .2s ease-in-out;
+        }
+        .grow:hover {
+            transform: scale(1.1);
+            position: relative;
+            /*top: -20px;*/
+            margin-top: -20px;
+            min-height: 10px;
+        }
+        #msg {
+            font-size: 32px;
+            color: lightgrey;
+            width: 60%;
+        }
+        .fontt {
+            font-family: courier-new, monospace;
+        }
+        .humanabsolute {
+            position: absolute;
+            transform: rotate(90deg);
+            width: 45%;
+        }
+        .pcabsolute {
+            position: absolute;
+            width: 45%;
+            /*display: none;*/
+            transform: rotate(270deg);
+        }
+        #handcontainer {
+            border-radius: 30px;
+            background-color: black;
+        }
+        #maintext {
+            display: flex;
+            justify-content: space-around;
+            font-size: 24px;
+            font-family: courier-new, monospace;
+            color: lightgrey;
+        }
+        #resetbutton {
+            font-size: 300px;
+            background-color: gray;
+
+        }
+    </style>
+</head>
+<body class="overview">
+
+<nav class="navbar navbar-inverse">
+    <div class="text-center">
+        <h1 class="fontt" style="font-size:50px; font-weight:bold">Rock Paper Scissors</h1>
+
+    </div>
+</nav>
+
+
+<div class="container">
+    <h3 class="text-center fontt">Welcome to the epic showdown between the pc hand and the human hand</h3><br>
+    <div id="handcontainer" class="row">
+        <div id="maintext" class="fontt">
+            <div>
+            <div class="text-center main">Your score </div>
+                <h1 id="humanscore" class="text-center main">0 </h1>
+            </div>
+            <div class="text-center main" id="msg">Select your hand!</div>
+            <div>
+            <div class="text-center main">Pc score </div>
+                <h1 id="pcscore" class="text-center main">0 </h1>
+            </div>
+        </div>
+        <div id="leftdiv" class="col-sm-4 hhand">
+            <img class="relative grow" id="humanrock" src="images/humanrock.png" class="img-responsive"
+                 style="width:50%"
+                 alt="Image">
+        </div>
+        <div id="middlediv" class="col-sm-4 hhand">
+            <img class="relative grow" id="humanpaper" src="images/humanpaper.png" class="img-responsive"
+                 style="width:50%"
+                 alt="Image">
+        </div>
+        <div id="rightdiv" class="col-sm-4 hhand">
+            <img class="relative grow" id="humanscissors" src="images/humanscissors.png" class="img-responsive"
+                 style="width:50%" alt="Image">
+        </div>
+    </div>
+</div>
+</div><br>
+
+
+<footer class="container-fluid text-center">
+    <p>This project was made by <a href="http://github.com/reflele">reflele</a></p>
+</footer>
+
+</body>
+</html>
