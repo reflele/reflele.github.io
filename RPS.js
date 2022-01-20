@@ -143,7 +143,6 @@ function assignWinner(playerInput, computerInput) {
     } else if (computerInput == "rock" && playerInput == "scissors"
         || computerInput == "paper" && playerInput == "rock"
         || computerInput == "scissors" && playerInput == "paper") {
-        // alert()
         winner = "pc";
         document.getElementById("pcscore").innerHTML = ++pcScore;
         document.getElementById("msg").innerHTML = "You lose! "+ computerInput + " beats " + playerInput;
@@ -151,7 +150,6 @@ function assignWinner(playerInput, computerInput) {
         document.getElementById("msg").innerHTML = "Its a draw!";
         winner = "none";
     }
-    // console.log(winner);
 
 
 
