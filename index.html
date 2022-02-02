@@ -8,73 +8,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="RPS.js" defer></script>
-    <style>
-        .navbar {
-            margin-bottom: 5px;
-            border-radius: 25px;
-        }
-        footer {
-            background-color: #c7c7c7;
-            padding: 7px;
-        }
-        .overview {
-            background-color: gray;
-        }
-        .hhand {
-            display: flex;
-            justify-content: center;
-        }
-        .main {
-            display: flex;
-            justify-content: space-evenly;
-        }
+    <link rel="stylesheet" href="style.css">
 
-        .grow {
-            transition: all .2s ease-in-out;
-        }
-        .grow:hover {
-            transform: scale(1.1);
-            position: relative;
-            /*top: -20px;*/
-            margin-top: -20px;
-            min-height: 10px;
-        }
-        #msg {
-            font-size: 32px;
-            color: lightgrey;
-            width: 60%;
-        }
-        .fontt {
-            font-family: courier-new, monospace;
-        }
-        .humanabsolute {
-            position: absolute;
-            transform: rotate(90deg);
-            width: 45%;
-        }
-        .pcabsolute {
-            position: absolute;
-            width: 45%;
-            /*display: none;*/
-            transform: rotate(270deg);
-        }
-        #handcontainer {
-            border-radius: 30px;
-            background-color: black;
-        }
-        #maintext {
-            display: flex;
-            justify-content: space-around;
-            font-size: 24px;
-            font-family: courier-new, monospace;
-            color: lightgrey;
-        }
-        #resetbutton {
-            font-size: 300px;
-            background-color: gray;
-
-        }
-    </style>
 </head>
 <body class="overview">
 
@@ -119,8 +54,8 @@
 </div><br>
 
 
-<footer class="container-fluid text-center">
-    <p>This project was made by <a href="http://github.com/reflele">reflele</a></p>
+<footer id="tobottom" class="text-center">
+    <p id="footertext">This project was made by <a href="http://github.com/reflele">reflele</a></p>
 </footer>
 
 </body>
